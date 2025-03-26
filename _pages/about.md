@@ -25,13 +25,6 @@ At RRCE, students are our prime focus. We provide a supportive environment to he
 - **Exam Timetables and Results**: Access examination schedules and results promptly.
 - **Holiday Lists**: Plan your academic year with the official list of holidays.
 
-## Student Achievements
-
-We take pride in our students' accomplishments. Notable achievements include:
-- **Ms. Benitta P Biju**: Placed in Mu Sigma with a CTC of ₹30 Lakh for over 4 years.
-- **Ms. Shraddha S**: VTU 2nd Rank Holder, Department of Master of Computer Applications, 2021–2023 Batch.
-- **Mr. Kiran H Y**: VTU 8th Rank Holder, Department of Mechanical Engineering, 2018–2022 Batch.
-
 ## Extracurricular Activities
 
 RRCE offers vibrant extracurricular activities to nurture diverse talents:
