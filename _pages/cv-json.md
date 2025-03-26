@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "CV"
-permalink: /cv-json/
+title: "Material"
+permalink: /Material-json/
 author_profile: false
 redirect_from:
   - /resume-json
@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<link rel="stylesheet" href="{{ base_path }}/assets/css/cv-style.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/Material-style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <style>
@@ -27,9 +27,9 @@ redirect_from:
   }
 </style>
 
-{% include cv-template.html %}
+{% include Material-template.html %}
 
-<div class="cv-download-links">
-  <a href="{{ base_path }}/files/cv.pdf" class="btn btn--primary">Download CV as PDF</a>
-  <a href="{{ base_path }}" class="btn btn--inverse">View Markdown CV</a>
+<div class="Material-download-links">
+  <a href="{{ base_path }}/files/Material.pdf" class="btn btn--primary">Download Material as PDF</a>
+  <a href="{{ base_path }}" class="btn btn--inverse">View Markdown Material</a>
 </div>

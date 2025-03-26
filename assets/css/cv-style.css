@@ -1,5 +1,5 @@
-/* CV Template Styles */
-.cv-container {
+/* Material Template Styles */
+.Material-container {
   max-width: 1000px;
   margin: 0 auto;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -8,57 +8,57 @@
 }
 
 /* Header Styles */
-.cv-header {
+.Material-header {
   margin-bottom: 2rem;
   border-bottom: 2px solid #f2f2f2;
   padding-bottom: 1rem;
 }
 
-.cv-header h1 {
+.Material-header h1 {
   margin-bottom: 0.5rem;
   color: #2a7ae2;
 }
 
-.cv-contact-info {
+.Material-contact-info {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.cv-contact-item {
+.Material-contact-item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.cv-profiles {
+.Material-profiles {
   display: flex;
   gap: 1rem;
   margin-top: 0.5rem;
 }
 
-.cv-profile-item {
+.Material-profile-item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.cv-profile-item a {
+.Material-profile-item a {
   color: #2a7ae2;
   text-decoration: none;
 }
 
-.cv-profile-item a:hover {
+.Material-profile-item a:hover {
   text-decoration: underline;
 }
 
 /* Section Styles */
-.cv-section {
+.Material-section {
   margin-bottom: 2rem;
 }
 
-.cv-section h2 {
+.Material-section h2 {
   border-bottom: 1px solid #f2f2f2;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
@@ -68,76 +68,76 @@
   color: #2a7ae2;
 }
 
-.cv-section h2 i {
+.Material-section h2 i {
   color: #666;
 }
 
 /* Item Styles */
-.cv-item {
+.Material-item {
   margin-bottom: 1.5rem;
 }
 
-.cv-item-header {
+.Material-item-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
 }
 
-.cv-item-title {
+.Material-item-title {
   font-weight: bold;
   font-size: 1.1rem;
 }
 
-.cv-item-date {
+.Material-item-date {
   color: #666;
 }
 
-.cv-item-subtitle {
+.Material-item-subtitle {
   color: #666;
   margin-bottom: 0.5rem;
 }
 
-.cv-item-summary {
+.Material-item-summary {
   margin-bottom: 0.5rem;
 }
 
-.cv-item-highlights {
+.Material-item-highlights {
   margin-top: 0.5rem;
   padding-left: 1.5rem;
 }
 
-.cv-item-highlights li {
+.Material-item-highlights li {
   margin-bottom: 0.25rem;
 }
 
-.cv-item-courses ul {
+.Material-item-courses ul {
   margin-top: 0.25rem;
   padding-left: 1.5rem;
 }
 
-.cv-item-courses li {
+.Material-item-courses li {
   margin-bottom: 0.25rem;
 }
 
 /* Skills Styles */
-.cv-skills {
+.Material-skills {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
-.cv-skill-category h3 {
+.Material-skill-category h3 {
   margin-bottom: 0.5rem;
   color: #333;
 }
 
-.cv-skill-keywords {
+.Material-skill-keywords {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.cv-skill-keyword {
+.Material-skill-keyword {
   background-color: #f2f2f2;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
@@ -145,14 +145,14 @@
 }
 
 /* Project Styles */
-.cv-project-keywords {
+.Material-project-keywords {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 0.5rem;
 }
 
-.cv-project-keyword {
+.Material-project-keyword {
   background-color: #e6f3ff;
   color: #2a7ae2;
   padding: 0.25rem 0.5rem;
@@ -161,45 +161,45 @@
 }
 
 /* Languages Styles */
-.cv-languages {
+.Material-languages {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-.cv-language {
+.Material-language {
   display: flex;
   flex-direction: column;
 }
 
-.cv-language-name {
+.Material-language-name {
   font-weight: bold;
 }
 
-.cv-language-fluency {
+.Material-language-fluency {
   color: #666;
   font-size: 0.9rem;
 }
 
 /* Interests Styles */
-.cv-interests {
+.Material-interests {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
-.cv-interest h3 {
+.Material-interest h3 {
   margin-bottom: 0.5rem;
   color: #333;
 }
 
-.cv-interest-keywords {
+.Material-interest-keywords {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.cv-interest-keyword {
+.Material-interest-keyword {
   background-color: #f9f9f9;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
@@ -207,28 +207,28 @@
 }
 
 /* References Styles */
-.cv-references {
+.Material-references {
   font-style: italic;
   color: #666;
 }
 
 /* Print Styles */
 @media print {
-  .cv-container {
+  .Material-container {
     max-width: 100%;
   }
   
-  .cv-header {
+  .Material-header {
     border-bottom-color: #ccc;
   }
   
-  .cv-section h2 {
+  .Material-section h2 {
     border-bottom-color: #ccc;
   }
   
-  .cv-skill-keyword,
-  .cv-project-keyword,
-  .cv-interest-keyword {
+  .Material-skill-keyword,
+  .Material-project-keyword,
+  .Material-interest-keyword {
     border: 1px solid #ccc;
     background-color: transparent;
   }
