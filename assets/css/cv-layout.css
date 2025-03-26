@@ -1,12 +1,12 @@
-/* Material Layout Specific Styles */
-.Material-header-nav {
+/* cv Layout Specific Styles */
+.cv-header-nav {
   padding: 1rem 0;
   text-align: center;
   margin-bottom: 2rem;
   border-bottom: 1px solid #f2f2f2;
 }
 
-.Material-header-nav .home-button {
+.cv-header-nav .home-button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -19,23 +19,23 @@
   transition: background-color 0.2s;
 }
 
-.Material-header-nav .home-button:hover {
+.cv-header-nav .home-button:hover {
   background-color: #1756a9;
 }
 
-.Material-container {
+.cv-container {
   max-width: 1000px;
   margin: 0 auto;
 }
 
 /* Download links styling */
-.Material-download-links {
+.cv-download-links {
   margin-top: 2rem;
   text-align: center;
   padding: 1rem;
   border-top: 1px solid #f2f2f2;
 }
 
-.Material-download-links a {
+.cv-download-links a {
   margin: 0 0.5rem;
 }

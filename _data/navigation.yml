@@ -4,7 +4,7 @@
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
 #
-# NOTE that only one of the Material options should be selected, the first is for the
+# NOTE that only one of the cv options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
@@ -23,11 +23,11 @@ main:
   - title: "Blog Posts"
     url: /year-archive/
     
-  - title: "Material"
-    url: /Material/
+  - title: "cv"
+    url: /cv/
     
-  # - title: "Material"
-  #   url: /Material-json/
+  # - title: "cv"
+  #   url: /cv-json/
     
   - title: "Guide"
     url: /markdown/

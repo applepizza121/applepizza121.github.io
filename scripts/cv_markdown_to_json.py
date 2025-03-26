@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Script to convert markdown Material to JSON format
+Script to convert markdown cv to JSON format
 Author: Yuan Chen
 """
 
@@ -20,8 +20,8 @@ class DateTimeEncoder(json.JSONEncoder):
             return obj.isoformat()
         return super().default(obj)
 
-def parse_markdown_Material(md_file):
-    """Parse the markdown Material file and extract sections."""
+def parse_markdown_cv(md_file):
+    """Parse the markdown cv file and extract sections."""
     with open(md_file, 'r', encoding='utf-8') as file:
         content = file.read()
     
@@ -364,10 +364,10 @@ def parse_portfolio(portfolio_dir):
     
     return portfolio
 
-def create_Material_json(md_file, config_file, repo_root, output_file):
-    """Create a JSON Material from markdown and other repository data."""
-    # Parse the markdown Material
-    sections = parse_markdown_Material(md_file)
+def create_cv_json(md_file, config_file, repo_root, output_file):
+    """Create a JSON cv from markdown and other repository data."""
+    # Parse the markdown cv
+    sections = parse_markdown_cv(md_file)
     
     # Parse config file
     config = parse_config(config_file)
@@ -376,7 +376,7 @@ def create_Material_json(md_file, config_file, repo_root, output_file):
     author_info = extract_author_info(config)
     
     # Create the JSON structure
-    Material_json = {
+    cv_json = {
         "basics": author_info,
         "work": parse_work_experience(sections.get('Work experience', '')),
         "education": parse_education(sections.get('Education', '')),
@@ -387,34 +387,34 @@ def create_Material_json(md_file, config_file, repo_root, output_file):
     }
     
     # Add publications
-    Material_json["publications"] = parse_publications(os.path.join(repo_root, "_publications"))
+    cv_json["publications"] = parse_publications(os.path.join(repo_root, "_publications"))
     
     # Add talks
-    Material_json["presentations"] = parse_talks(os.path.join(repo_root, "_talks"))
+    cv_json["presentations"] = parse_talks(os.path.join(repo_root, "_talks"))
     
     # Add teaching
-    Material_json["teaching"] = parse_teaching(os.path.join(repo_root, "_teaching"))
+    cv_json["teaching"] = parse_teaching(os.path.join(repo_root, "_teaching"))
     
     # Add portfolio
-    Material_json["portfolio"] = parse_portfolio(os.path.join(repo_root, "_portfolio"))
+    cv_json["portfolio"] = parse_portfolio(os.path.join(repo_root, "_portfolio"))
     
     # Extract languages and interests from config if available
     if 'languages' in config:
-        Material_json["languages"] = config.get('languages', [])
+        cv_json["languages"] = config.get('languages', [])
     
     if 'interests' in config:
-        Material_json["interests"] = config.get('interests', [])
+        cv_json["interests"] = config.get('interests', [])
     
     # Write the JSON to a file
     with open(output_file, 'w', encoding='utf-8') as file:
-        json.dump(Material_json, file, indent=2, cls=DateTimeEncoder)
+        json.dump(cv_json, file, indent=2, cls=DateTimeEncoder)
     
     print(f"Successfully converted {md_file} to {output_file}")
 
 def main():
     """Main function to parse arguments and run the conversion."""
-    parser = argparse.ArgumentParser(description='Convert markdown Material to JSON format')
-    parser.add_argument('--input', '-i', required=True, help='Input markdown Material file')
+    parser = argparse.ArgumentParser(description='Convert markdown cv to JSON format')
+    parser.add_argument('--input', '-i', required=True, help='Input markdown cv file')
     parser.add_argument('--output', '-o', required=True, help='Output JSON file')
     parser.add_argument('--config', '-c', help='Jekyll _config.yml file')
     
@@ -423,7 +423,7 @@ def main():
     # Get repository root (parent directory of the input file's directory)
     repo_root = str(Path(args.input).parent.parent)
     
-    create_Material_json(args.input, args.config, repo_root, args.output)
+    create_cv_json(args.input, args.config, repo_root, args.output)
 
 if __name__ == '__main__':
     main()
