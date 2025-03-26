@@ -1,3 +1,11 @@
+---
+permalink: /
+title: "RRCE Student's Corner"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
 # Welcome to the Student's Corner of RajaRajeswari College of Engineering (RRCE)
 
 RajaRajeswari College of Engineering (RRCE) is a premier institution committed to fostering academic excellence and holistic development.
